@@ -41,3 +41,10 @@ pgdata/
 
 ### Redis ###
 redis/data/
+
+### Redis ###
+redis/data/
+
+### No Yiberish for You ###
+/yiberish/
+
