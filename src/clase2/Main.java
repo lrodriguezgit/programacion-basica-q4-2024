@@ -1,3 +1,4 @@
+package clase2;
 /*
     Que es programar?
     Escribir instrucciones en un ordenador para que realice una tarea.
@@ -13,8 +14,6 @@
     JAVA <- se construye a partir de C <- C se construye a partir de B <- 010101010110 tarjetas perforadas
     Sistemas operativos
  */
-
-import java.time.LocalDateTime;
 
 public class Main {
     public static void main(String[] args) {
@@ -33,6 +32,10 @@ public class Main {
         //git commit -m "mensaje de confirmación" : confirma los cambios en el repositorio
         // cuando commiteamos nuestro branch va a estar 1 commit por delante del "origin" -> origin es la version que esta subida en github
 
+        //git push : subimos los cambios al repositorio remoto
+
+        //git pull : traer los cambios del repositorio remoto a nuestro repositorio local
+        //           Puede llegar a dar conflictos de versiones
     }
 
 }

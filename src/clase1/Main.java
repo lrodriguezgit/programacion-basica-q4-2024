@@ -1,4 +1,4 @@
-/*
+package clase1;/*
     Que es programar?
     Escribir instrucciones en un ordenador para que realice una tarea.
 
@@ -23,10 +23,15 @@ public class Main {
         //Que es una variable?
         //Un lugar en memoria donde se almacena un valor. Cambian de valor.
         //Tipos de datos primitivos:
+        byte numeroPequeno = -127;
+        short numeroChiquito = 19264;
         int numero = 10;
+        long numeroMasGrande = 1000000000000000000L;
         float numeroFlotante = 10.5f;
+        double numeroMasPrecision = 10.129317629312731298398;
         boolean condicion = false;
         char caracter = 'A';
+        char miNumero = '\u0041';
 
         //Tipos de datos complejos, en realidad se llaman clases:
         Character letra = 'A';
@@ -61,6 +66,10 @@ public class Main {
         //Java tiene su libreria
         Double potencia = Math.pow(2, 4); //16
 
+        int otroNumero = 10;
+        System.out.println(otroNumero++); //Imprime 10 porque primero se ejecuta la linea de codigo y despues incrementa el valor
+        System.out.println(++otroNumero); //Imprime 12 porque antes era 11 y se incrementa de nuevo antes de ejecutar la linea de codigo
+
         //Operaciones de comparacion en tipos de datos primitivos:
         Boolean igualdad = 10 == 20;
         Boolean menor = 10 < 20;
@@ -76,10 +85,25 @@ public class Main {
 
         //Operaciones de comparacion en tipos de datos complejos:
         Boolean esItaliana = tipoCafetera.equals("Italiana");
+
+        suma = null;
+        suma = incrementar(suma);
+        return;
     }
 
     public static Integer medirTemperatura() {
         int temperatura = 10;
         return temperatura;
+    }
+
+    public static Integer incrementar(Integer numero) {
+        if(numero == null) {
+            return -1;
+        }
+        return incrementarv2(numero);
+    }
+
+    public static Integer incrementarv2(Integer numero) {
+        return numero++;
     }
 }

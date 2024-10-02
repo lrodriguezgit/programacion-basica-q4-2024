@@ -1,3 +1,5 @@
+package clase1;
+
 public class Agua {
     Integer temperatura = 0;
 
