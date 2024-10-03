@@ -6,7 +6,7 @@ public class ejercicio_2 {
     bmi(1,1);
   }
   public static String bmi(double weight, double height) {
-    double bmi = weight / height * height;
+    double bmi = weight / (height * height);
     if (bmi <= 18.5) {
       return "Underweight";
     } else if (bmi <= 25) {
