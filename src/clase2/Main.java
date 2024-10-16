@@ -22,6 +22,8 @@ public class Main {
         //      y para comparar versiones
 
         //git clone : copia el repositorio
+
+
         //git status : muestra los cambios que se encuentran en el repositorio
         //      -> Untracked files: lista los archivos que no están en el repositorio
         //      -> Changes to be committed: lista los archivos que se encuentran en el repositorio pero que no se han confirmado
