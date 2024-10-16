@@ -1,7 +1,7 @@
 package ejercicios.vicky;
 import java.util.Scanner;
 import java.lang.String;
-public class Main {
+public class EjOperaciones {
     public static void main(String [] args) {
         Scanner lectura = new Scanner (System.in);
         System.out.println("Ingrese el operador: ");
