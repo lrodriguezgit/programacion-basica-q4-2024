@@ -1,4 +1,4 @@
-package ejercicios.petro;
+package ejercicios.petro.clases1_2;
 
 import java.util.Arrays;
 

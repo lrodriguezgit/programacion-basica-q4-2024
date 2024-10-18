@@ -1,11 +1,9 @@
-package ejercicios.lucho;
+package ejercicios.petro.clase4;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class Main {
-
+ // Lucho por que tengo esta clase MAIN en mi package ? SPAM
     public static void main(String[] args) {
         int[] resultado = digitize(0);
         System.out.println("El resultado es: " + Arrays.toString(resultado));

@@ -1,4 +1,4 @@
-package ejercicios.petro;
+package ejercicios.petro.clases1_2;
 
 //https://www.codewars.com/kata/57a429e253ba3381850000fb/train/java
 public class ejercicio_2 {
