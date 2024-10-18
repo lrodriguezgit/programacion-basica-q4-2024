@@ -65,6 +65,13 @@ public class Main {
             System.out.println("Ahora mi numero es " + numero);
         }
 
+        //do while
+        int digitos = 0;
+        do {
+            numero /= 10;
+            digitos++;
+        } while(numero != 0);
+
         //No lo hagan en casa
         while(true) {
             if(numero == 10) {

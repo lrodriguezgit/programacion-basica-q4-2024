@@ -1,10 +1,14 @@
 package ejercicios.lucho;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
-        int resultado = litersUp(11.8);
-        System.out.println("El resultado es: " + resultado);
+        int[] resultado = digitize(0);
+        System.out.println("El resultado es: " + Arrays.toString(resultado));
     }
 
     public static String evenOrOdd(int number) {
@@ -22,5 +26,35 @@ public class Main {
     public static int litersUp(double time)  {
         Double liters = time/2;
         return liters.intValue();
+    }
+
+    //[ 3 , 2 ]
+    //  0   1   2 -> ArrayIndexOutOfBoundsException
+
+    // n = 1234
+    // i = 1
+    // digito = 3
+    // n = 12
+    // result = [ 4 , 3 , 2 , 1]
+    public static int[] digitize(long n) {
+        Long numero = n;
+        int digitos = digits(n);
+        int[] result = new int[digitos];
+        for(int i = 0; i < digitos; i++) {
+            int digito = (int) n % 10;
+            n /= 10;
+            result[i] = digito;
+        }
+        return result;
+    }
+
+    public static int digits(long n) {
+        long numero = n;
+        int i = 0;
+        do {
+            numero /= 10;
+            i++;
+        } while(numero != 0);
+        return i;
     }
 }
