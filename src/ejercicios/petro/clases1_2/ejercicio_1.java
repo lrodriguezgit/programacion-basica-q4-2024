@@ -1,4 +1,4 @@
-package ejercicios.petro;
+package ejercicios.petro.clases1_2;
 
 //https://www.codewars.com/kata/5bb904724c47249b10000131/train/java -Solved
 //Total amount of points

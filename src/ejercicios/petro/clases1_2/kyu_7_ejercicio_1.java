@@ -1,4 +1,4 @@
-package ejercicios.petro;
+package ejercicios.petro.clases1_2;
 // https://www.codewars.com/kata/57cf50a7eca2603de0000090/train/java
 public class kyu_7_ejercicio_1 {
   public static void main(String[] args) {
