@@ -33,7 +33,6 @@ public class Main {
         if(!miLista.isEmpty()) {
             System.out.println("Mi lista no esta vacia");
         }
-
         List<Integer> miLista7 = new ArrayList<>();
         for (int i = 0; i < miLista.size(); i++) { //El size() devuelve la cantidad de elementos presentes en la lista
             Integer elementoEnI = miLista.get(i); //El get( i ) devuelve el elemento en la posicion i, empezando en la posicion 0
