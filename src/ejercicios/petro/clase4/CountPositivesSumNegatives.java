@@ -17,7 +17,7 @@ public class CountPositivesSumNegatives {
     int sum = 0;
 
     if (input == null || input.length == 0) {
-      return new int[]{};
+      return  new int[resultsList.size()];
     }else{
       for (int num : input){
         if(num > 0) count ++;
