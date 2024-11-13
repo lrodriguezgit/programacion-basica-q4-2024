@@ -1,4 +1,4 @@
-package ejercicios.gabo.basicOps;
+package ejercicios.gabo.CountPositivesSumNegatives;
 
 import java.util.List;
 
