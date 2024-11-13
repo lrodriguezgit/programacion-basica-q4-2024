@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+//Corregido 30/10/2024 - APROBADO MUY SATISFACTORIO :D :D !! Segui asi papa !!!1
 public class Vowels {
   public static void main(String[] args) {
     getCountLetters("albaricoque");
