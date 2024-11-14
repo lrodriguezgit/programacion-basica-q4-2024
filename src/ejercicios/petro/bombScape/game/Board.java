@@ -1,4 +1,6 @@
-package ejercicios.petro.bombScape;
+package ejercicios.petro.bombScape.game;
+
+import ejercicios.petro.bombScape.entities.Tile;
 
 public class Board {
   private int size;
@@ -23,10 +25,13 @@ public class Board {
 
   public void setTerrain(int size) {
     terrain = new Tile[size][size];
+    int id = 1;
     for (int i = 0; i < this.size; i++) {
       for (int j = 0; j < this.size; j++) {
-        terrain[i][j] = new Tile(false,i,j);
+        terrain[i][j] = new Tile(false, i, j, id++);
       }
     }
   }
+
+ //Acceder a sus tiles
 }
