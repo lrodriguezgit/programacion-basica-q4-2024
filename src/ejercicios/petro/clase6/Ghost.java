@@ -1,16 +1,20 @@
 package ejercicios.petro.clase6;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
+
 public class Ghost {
-  private String color;
+  private String color;// modificar codigo para que ipo sea Colors
+
   public enum Colors {
-    white, yellow, purple,red;
+    white, yellow, purple, red;
   }
+
   public Ghost() {
     Random random = new Random();
-    int randomIndex= random.nextInt(Colors.values().length);
+    int randomIndex = random.nextInt(Colors.values().length);
     this.color = Colors.values()[randomIndex].toString();
   }
 
@@ -21,15 +25,18 @@ public class Ghost {
   public void setColor(String color) {
     this.color = color;
   }
+
   @Override
   public String toString() {
     return "This Ghost is " + color;
   }
-  public static void evenGhostsColor(List<Ghost> ghosts ){
-    for (int i = 0; i < ghosts.size() ; i++) {
-      String color = Colors.values()[i %  Colors.values().length].toString();
+
+  public static void evenGhostsColor(List<Ghost> ghosts) {
+    for (int i = 0; i < ghosts.size(); i++) {
+      String color = Colors.values()[i % Colors.values().length].toString();
       ghosts.get(i).setColor(color);
-    };
+    }
+    ;
     ghosts.sort(Comparator.comparing(Ghost::getColor));
   }
 
