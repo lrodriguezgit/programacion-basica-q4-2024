@@ -1,6 +1,9 @@
+package ejercicios.gabo.EpicRPG;
+
 import Characters.classes.Assassin;
 import Characters.classes.Mage;
 import Characters.classes.Warrior;
+
 
 public class Main {
     public static void main(String[] args) {

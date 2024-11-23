@@ -1,3 +1,5 @@
+package ejercicios.gabo.EpicRPG;
+
 import Characters.Character;
 
 public class Battle {

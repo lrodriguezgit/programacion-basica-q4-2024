@@ -1,3 +1,5 @@
+package ejercicios.gabo.EpicRPG;
+
 public enum Actions {
     BUFF(1),
     NORMAL_ATTACK(2),
