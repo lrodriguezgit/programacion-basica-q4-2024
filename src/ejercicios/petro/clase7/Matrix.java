@@ -7,7 +7,6 @@ public class Matrix {
     int[][] rotatedArray = array;
     for (int i = 0; i < array.length; i++) {
       for (int j = 0; j < array.length; j++) {
-        if (i == array.length-1 || i = 0 )
       }
     }
 

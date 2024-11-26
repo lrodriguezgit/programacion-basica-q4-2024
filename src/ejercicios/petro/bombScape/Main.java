@@ -6,8 +6,6 @@ import ejercicios.petro.bombScape.entities.obstacle.Obstacle;
 import ejercicios.petro.bombScape.entities.obstacle.ObstacleType;
 import ejercicios.petro.bombScape.game.Board;
 
-import java.util.ArrayList;
-
 public class Main {
 
   public static void main(String[] args) {
@@ -15,24 +13,18 @@ public class Main {
 
     Obstacle myObstacle = new Obstacle(ObstacleType.TREE, true);
     Bomb myBomb = new Bomb(BombType.CROSS, 2);
-
-
     myBoard.placeObject(myObstacle, 0, 0);
     myBoard.placeObject(myBomb, 1, 1);
+    myBoard.removeObject(myBomb);
+    //Completar Character
+    //Controles
+    //Validaciones y Restricciones de posicionamiento
+    //Comportamiento Bomba
+    //Efecto sobre ambiento Bomba
+    //Game
 
-    myBoard.removeObject(myObstacle, 0, 0);
 
 
-
-
-
-    // crear lista de objetos, crear lsita de0
-    // definir metodos bomba
-    // character
-    // maps
-    // mapas predefinidos
-    // randomizador de bombas
-    // Controles y menu
   }
 
 }
