@@ -34,8 +34,8 @@ public class Main {
         //Para recorrer una matriz tendriamos que hacer fors anidados:
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
-                int elemento = matriz[i][j];
-                System.out.print(elemento + ",");
+              int elemento = matriz[i][j];
+              System.out.print(elemento + ",");
             }
             System.out.println();
         }

@@ -4,15 +4,20 @@ import ejercicios.petro.bombScape.entities.Entity;
 
 public class Obstacle extends Entity {
   private ObstacleType type;
+  private Boolean destructible;
 
-  public Obstacle(ObstacleType type) {
+  public Obstacle(ObstacleType type, Boolean destructible) {
     this.type = type;
+    this.destructible = destructible;
   }
 
-  protected void setPosX(Integer posX) {
-    super.setPosX(posX);
+  public ObstacleType getType() {
+    return type;
   }
-  protected void setPosY(Integer posY) {
-    super.setPosY(posY);
+
+  public Boolean getDestructible() {
+    return destructible;
   }
 }
+
+

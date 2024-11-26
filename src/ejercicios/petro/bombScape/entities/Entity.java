@@ -2,8 +2,8 @@ package ejercicios.petro.bombScape.entities;
 
 public abstract class Entity {
   private int id;
-  private int posX;
-  private int posY;
+  private Integer posX;
+  private Integer posY;
 
   public int getId() {
     return id;
@@ -18,7 +18,7 @@ public abstract class Entity {
     return posX;
   }
 
-  protected void setPosX(int posX) {
+  public void setPosX(Integer posX) {
     this.posX = posX;
   }
 
@@ -26,7 +26,7 @@ public abstract class Entity {
     return posY;
   }
 
-  protected void setPosY(int posY) {
+  public void setPosY(Integer posY) {
     this.posY = posY;
   }
 }

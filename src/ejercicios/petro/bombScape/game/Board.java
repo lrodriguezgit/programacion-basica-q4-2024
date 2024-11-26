@@ -1,5 +1,6 @@
 package ejercicios.petro.bombScape.game;
 
+import ejercicios.petro.bombScape.entities.Entity;
 import ejercicios.petro.bombScape.entities.Tile;
 
 public class Board {
@@ -33,5 +34,24 @@ public class Board {
     }
   }
 
- //Acceder a sus tiles
+  public void placeObject(Entity object, Integer posX, Integer posY) {
+    object.setPosX(posX);
+    object.setPosY(posY);
+    Tile tile = getTileByPosition(posX, posY);
+    tile.placeObject(object);
+  }
+
+  public void removeObject(Entity object, Integer posX, Integer posY) {
+    object.setPosX(null);
+    object.setPosY(null);
+    Tile tile = getTileByPosition(posX, posY);
+    tile.removeObject();
+  }
+
+  public Tile getTileByPosition(Integer posX, Integer posY) {
+    return terrain[posX][posY];
+  }
+
+  ;
 }
+

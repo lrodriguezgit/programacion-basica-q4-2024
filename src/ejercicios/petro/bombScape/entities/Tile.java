@@ -1,23 +1,26 @@
 package ejercicios.petro.bombScape.entities;
 
+
 public class Tile extends Entity {
   private Entity content;
-  private boolean isOccupied;
+  private Boolean isOccupied;
 
-  public Tile(Boolean isOccupied, Integer posX, Integer posY,Integer id) {
+  public Tile(Boolean isOccupied, Integer posX, Integer posY, Integer id) {
     this.isOccupied = isOccupied;
     setPosX(posX);
     setPosY(posY);
     setId(id);
   }
-  protected void setId(Integer id) {
+
+  public void setId(Integer id) {
     super.setId(id);
   }
-  protected void setPosX(Integer posX) {
+
+  public void setPosX(Integer posX) {
     super.setPosX(posX);
   }
 
-  protected void setPosY(Integer posY) {
+  public void setPosY(Integer posY) {
     super.setPosY(posY);
   }
 
@@ -35,9 +38,12 @@ public class Tile extends Entity {
     return isOccupied;
   }
 
-  public void setOccupied(boolean occupied) {
+  public void setOccupied(Boolean occupied) {
     isOccupied = occupied;
   }
+
+//>Get by posicion?
+
 
   // Get tile by id
   // Get tile by posicion
